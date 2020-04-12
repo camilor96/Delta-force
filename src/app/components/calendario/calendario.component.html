@@ -1,3 +1,4 @@
+
 <div class="wrapper">
     <!-- Sidebar -->
     <nav id="sidebar">
@@ -8,7 +9,7 @@
             <p>Hola, pepito!</p>
             <li class="active">
             <li>
-                <a href="#">Calendario</a>
+                <a routerLink="/calendario">Calendario</a> <!-- Redirecciono a componente calendario -->
             </li>
             <li>
                 <a href="#">Consultorías</a>
@@ -20,7 +21,7 @@
                 <a href="#">Empredimientos</a>
             </li>
             <li>
-                <a href="#">Emprendedores</a>
+                <a routerLink="/crear-emprendedor">Emprendedores</a>
             </li>
             <li>
                 <a href="#">Otros...</a>
@@ -33,12 +34,15 @@
         </ul>
     </nav> <!-- Fin Sidebar -->
 
-    <div class="container mt-5"> 
+    <div class="container mt-2"> 
         <!-- El contenido de la pagina debe ser desarrollado adentro de este div -->
-        <label for="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repellendus eligendi consequatur id laudantium perferendis sequi voluptates quam! Molestiae doloremque nulla cupiditate alias dolor, harum adipisci voluptate ea asperiores enim?</label>
+        <full-calendar defaultView="dayGridMonth" [plugins]="calendarPlugins"></full-calendar>
     </div>
 
 </div>
+
+
+
 
 
 
